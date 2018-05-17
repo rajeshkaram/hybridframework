@@ -1,59 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="76317" started-at="2018-05-08T10:13:11Z" finished-at="2018-05-08T10:14:27Z">
+  <suite name="Suite" duration-ms="18097" started-at="2018-05-17T06:16:19Z" finished-at="2018-05-17T06:16:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="76317" started-at="2018-05-08T10:13:11Z" finished-at="2018-05-08T10:14:27Z">
-      <class name="testcases.LoginTestCase2">
-        <test-method status="PASS" signature="setupTestSuite()[pri:0, instance:testcases.LoginTestCase2@eafc191]" name="setupTestSuite" is-config="true" duration-ms="353" started-at="2018-05-08T10:13:11Z" finished-at="2018-05-08T10:13:11Z">
+    <test name="Test" duration-ms="18097" started-at="2018-05-17T06:16:19Z" finished-at="2018-05-17T06:16:37Z">
+      <class name="testcases.primusbanklogintestcase">
+        <test-method status="PASS" signature="setupTestSuite()[pri:0, instance:testcases.primusbanklogintestcase@eafc191]" name="setupTestSuite" is-config="true" duration-ms="217" started-at="2018-05-17T06:16:19Z" finished-at="2018-05-17T06:16:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTestSuite -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:testcases.LoginTestCase2@eafc191]" name="startTest" is-config="true" duration-ms="33218" started-at="2018-05-08T10:13:11Z" finished-at="2018-05-08T10:13:44Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testcases.primusbanklogintestcase@eafc191]" name="startTest" is-config="true" duration-ms="9090" started-at="2018-05-17T06:16:19Z" finished-at="2018-05-17T06:16:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginTestCase2@eafc191]" name="login" duration-ms="20990" started-at="2018-05-08T10:13:44Z" finished-at="2018-05-08T10:14:05Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.primusbanklogintestcase@eafc191]" name="login" duration-ms="7741" started-at="2018-05-17T06:16:28Z" finished-at="2018-05-17T06:16:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="endLogger(org.testng.ITestResult)[pri:0, instance:testcases.LoginTestCase2@eafc191]" name="endLogger" is-config="true" duration-ms="5" started-at="2018-05-08T10:14:05Z" finished-at="2018-05-08T10:14:05Z">
+        <test-method status="PASS" signature="endLogger(org.testng.ITestResult)[pri:0, instance:testcases.primusbanklogintestcase@eafc191]" name="endLogger" is-config="true" duration-ms="16" started-at="2018-05-17T06:16:36Z" finished-at="2018-05-17T06:16:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTestCase2.login()[pri:0, instance:testcases.LoginTestCase2@eafc191] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=primusbanklogintestcase.login()[pri:0, instance:testcases.primusbanklogintestcase@eafc191] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endLogger -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:testcases.LoginTestCase2@eafc191]" name="logout" duration-ms="16427" started-at="2018-05-08T10:14:05Z" depends-on-methods="testcases.LoginTestCase2.login" finished-at="2018-05-08T10:14:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="endLogger(org.testng.ITestResult)[pri:0, instance:testcases.LoginTestCase2@eafc191]" name="endLogger" is-config="true" duration-ms="0" started-at="2018-05-08T10:14:22Z" finished-at="2018-05-08T10:14:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=logout status=SUCCESS method=LoginTestCase2.logout()[pri:0, instance:testcases.LoginTestCase2@eafc191] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endLogger -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:testcases.LoginTestCase2@eafc191]" name="endTest" is-config="true" duration-ms="5623" started-at="2018-05-08T10:14:22Z" finished-at="2018-05-08T10:14:27Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:testcases.primusbanklogintestcase@eafc191]" name="endTest" is-config="true" duration-ms="1226" started-at="2018-05-17T06:16:36Z" finished-at="2018-05-17T06:16:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="tearDownTestSuite()[pri:0, instance:testcases.LoginTestCase2@eafc191]" name="tearDownTestSuite" is-config="true" duration-ms="739" started-at="2018-05-08T10:14:28Z" finished-at="2018-05-08T10:14:28Z">
+        <test-method status="PASS" signature="tearDownTestSuite()[pri:0, instance:testcases.primusbanklogintestcase@eafc191]" name="tearDownTestSuite" is-config="true" duration-ms="430" started-at="2018-05-17T06:16:37Z" finished-at="2018-05-17T06:16:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTestSuite -->
-      </class> <!-- testcases.LoginTestCase2 -->
+      </class> <!-- testcases.primusbanklogintestcase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

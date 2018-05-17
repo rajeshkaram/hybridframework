@@ -15,7 +15,7 @@ public class ExcelDataProvider
 		
 		try 
 		{
-		wb=new XSSFWorkbook(new FileInputStream(new File("./excelfile/Application_Data.xlsx")));
+		wb=new XSSFWorkbook(new FileInputStream(new File(".\\excelfile\\primuslogin.xlsx")));
 		} catch (Exception e) {
 			
 			System.out.println("Failed to load excel sheet");

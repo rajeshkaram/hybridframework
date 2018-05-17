@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.logging.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -21,7 +23,7 @@ public class BaseClass
 
 	public WebDriver driver;
 	public ExtentReports report;
-	public ExtentTest logger;
+	public ExtentTest Logger;
 	
 	@BeforeSuite
 	public void setupTestSuite()
@@ -52,18 +54,18 @@ public class BaseClass
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
 			String path=Utility.captureScreenshot(driver);
-			logger.log(LogStatus.FAIL, logger.addScreenCapture(path));
-			logger.log(LogStatus.FAIL, "Test Failed because of "+result.getThrowable().getMessage());
+			Logger.log(LogStatus.FAIL, Logger.addScreenCapture(path));
+			Logger.log(LogStatus.FAIL, "Test Failed because of "+result.getThrowable().getMessage());
 		}
 		else if(result.getStatus()==ITestResult.SUCCESS)
 		{
-			logger.log(LogStatus.PASS, "Test Completed Successfully");
+			Logger.log(LogStatus.PASS, "Test Completed Successfully");
 		}
 		else
 		{
-			logger.log(LogStatus.SKIP, "Test Skipped "+result.getThrowable().getMessage());
+			Logger.log(LogStatus.SKIP, "Test Skipped "+result.getThrowable().getMessage());
 		}
-		report.endTest(logger);	
+		report.endTest(Logger);	
 	}
 	
 	

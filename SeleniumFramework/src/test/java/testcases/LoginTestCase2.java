@@ -18,26 +18,26 @@ public class LoginTestCase2 extends BaseClass
 	@Test
 	public void login()
 	{
-		logger=report.startTest("Login", "This test case will verify valid login");
+		Logger=report.startTest("Login", "This test case will verify valid login");
 		
 		login=PageFactory.initElements(driver, LoginPage.class);
 		
 		login.verifyTitleBeforeLogin();
 		
-		logger.log(LogStatus.INFO, "Login page appeared");
+		Logger.log(LogStatus.INFO, "Login page appeared");
 	
 		login.loginToCRM();
 		
 		login.verifyTitleAfterLogin();
 		
-		logger.log(LogStatus.PASS, "Title Verified"); 
+		Logger.log(LogStatus.PASS, "Title Verified"); 
 		
 	}
 	
 	@Test(dependsOnMethods="login")
 	public void logout()
 	{
-		logger=report.startTest("Logout", "This test case will logut from app");
+		Logger=report.startTest("Logout", "This test case will logut from app");
 		
 		logout=PageFactory.initElements(driver, LogoutPage.class);
 		
@@ -45,7 +45,7 @@ public class LoginTestCase2 extends BaseClass
 		
 		login.verifyTitleBeforeLogin();
 		
-		logger.log(LogStatus.PASS, "Logout done Successfully");
+		Logger.log(LogStatus.PASS, "Logout done Successfully");
 		
 	}
 	

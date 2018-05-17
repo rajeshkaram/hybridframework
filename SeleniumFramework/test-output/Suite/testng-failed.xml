@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="class13.ParametersDemo">
+      <class name="testcases.primusbanklogintestcase">
         <methods>
-          <include name="testParameters"/>
+          <include name="login"/>
+          <include name="endTest"/>
+          <include name="tearDownTestSuite"/>
+          <include name="endLogger"/>
+          <include name="startTest"/>
+          <include name="setupTestSuite"/>
         </methods>
-      </class> <!-- class13.ParametersDemo -->
+      </class> <!-- testcases.primusbanklogintestcase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
